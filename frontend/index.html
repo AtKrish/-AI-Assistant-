@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chatbot</title>
+
+    <link rel="stylesheet" href="/static/styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+
+<!-- Chat Bubble -->
+<div id="chat-bubble" onclick="toggleChat()">💬</div>
+
+<!-- Chat Window -->
+<div id="chat-window">
+    <div id="chat-header">
+        <span>AI Assistant 🤖</span>
+        <div>
+            <button onclick="toggleFull()">⬜</button>
+            <button onclick="toggleChat()">✖</button>
+        </div>
+    </div>
+
+    <div id="chat-body"></div>
+
+    <div id="chat-input">
+        <input id="message" placeholder="Type your issue..." />
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script src="/static/script.js?v=6"></script>
+</body>
+</html>
